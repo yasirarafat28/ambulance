@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+@php
+ $setting = setting();
+@endphp
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="icon" href="img/favicon.png" type="image/png" />
-    <title>Lagoon Logistics</title>
+    <title>{{$setting->app_name}}</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/front/css/bootstrap.css" />
     <link rel="stylesheet" href="/front/vendors/linericon/style.css" />
@@ -18,6 +22,20 @@
     <!-- main css -->
     <link rel="stylesheet" href="/front/css/style.css" />
     <link rel="stylesheet" href="/front/css/responsive.css" />
+
+    <style>
+        .home_banner_area .banner_inner .banner-left h3{
+            color: #fff !important;
+        }
+
+        .form-control, .form-select{
+            height: 48px !important;
+        }
+
+        .quote-area .estimated-cost .form-wrap .form-select .nice-select{
+            height: 48px !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -54,13 +72,13 @@
                     <li>
                         <a href="login.html">
                             <i class="lnr lnr-phone-handset"></i>
-                            012-6532-568-9746
+                            {{$setting->phone}}
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <i class="lnr lnr-envelope"></i>
-                            emergency@colorlib.com
+                            {{$setting->email}}
                         </a>
                     </li>
                 </ul>
@@ -71,8 +89,8 @@
         <nav class="navbar navbar-expand-lg w-100">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand logo_h" href="index.html">
-                    <img src="/front/img/logo.png" alt="" />
+                <a class="navbar-brand logo_h" href="{{url('/')}}">
+                    <img src="/front/img/logo.png" alt="" style="height: 80px;"/>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,23 +103,14 @@
                     <div class="row w-100">
                         <div class="col-lg-12 pr-lg-0">
                             <ul class="nav navbar-nav ml-auto justify-content-end">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">Home</a>
+                                <li class="nav-item {{Request::is('/')?'active':''}}">
+                                    <a class="nav-link" href="{{url('/')}}">Home</a>
                                 </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="about.html">About</a>
+                                <li class="nav-item  {{Request::is('/services')?'active':''}}">
+                                    <a class="nav-link" href="{{url('services')}}">Services</a>
                                 </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="services.html">Services</a>
-                                </li>
-                                <li class="nav-item submenu dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                                       aria-expanded="false">Pages</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="elements.html">Elements</a>
-                                        </li>
-                                    </ul>
+                                <li class="nav-item  {{Request::is('/reservation')?'active':''}}">
+                                    <a class="nav-link" href="{{url('reservation')}}">Reservation</a>
                                 </li>
                                 <li class="nav-item submenu dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -115,8 +124,11 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
+                                <li class="nav-item  {{Request::is('/about')?'active':''}}">
+                                    <a class="nav-link" href="{{url('about')}}">About</a>
+                                </li>
+                                <li class="nav-item {{Request::is('/contact')?'active':''}}">
+                                    <a class="nav-link" href="{{url('contact')}}">Contact</a>
                                 </li>
                             </ul>
                         </div>

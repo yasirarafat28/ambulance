@@ -21,24 +21,32 @@ class CreateSettingTable extends Migration
             $table->text('tagline')->nullable();
             $table->text('meta_title')->nullable();
             $table->text('meta_description')->nullable();
-            $table->text('admin_email')->nullable();
-            $table->text('admin_phone')->nullable();
-            $table->text('full_address')->nullable();
+            $table->text('email')->nullable();
+            $table->text('phone')->nullable();
+            $table->text('address')->nullable();
             $table->text('zip')->nullable();
             $table->text('country')->nullable();
-            $table->enum('status', ['active', 'deactive'])->default('active');
+            $table->text('address')->nullable();
+            $table->text('logo')->nullable();
+            $table->text('facebook')->nullable();
+            $table->text('twitter')->nullable();
+            $table->text('linkedin')->nullable();
+            $table->text('youtube')->nullable();
+            $table->text('instagram')->nullable();
+            $table->text('pinterest')->nullable();
+            $table->enum('status', ['active', 'inactive'])->default('active');
             $table->timestamps();
         });
 
         DB::table('setting')->insertGetId([
-            'app_name' => 'দি অন্তরঙ্গ বহুমুখী সমবায় সমিতি',
-            'app_description' => 'দি অন্তরঙ্গ বহুমুখী সমবায় সমিতি',
-            'tagline' => 'দি অন্তরঙ্গ বহুমুখী সমবায় সমিতি',
-            'meta_title' => 'দি অন্তরঙ্গ বহুমুখী সমবায় সমিতি',
-            'meta_description' => 'দি অন্তরঙ্গ বহুমুখী সমবায় সমিতি',
-            'admin_email' => 'yasirarafat1995@gmail.com',
-            'admin_phone' => '0123456789',
-            'full_address' => 'Mirpur,Dhaka',
+            'app_name' => 'Hamida Ambulance Service',
+            'app_description' => 'Hamida Ambulance Service',
+            'tagline' => 'Hamida Ambulance Service',
+            'meta_title' => 'Hamida Ambulance Service',
+            'meta_description' => 'Hamida Ambulance Service',
+            'email' => 'yasirarafat1995@gmail.com',
+            'phone' => '01712013284',
+            'address' => 'Office Address : 267/1/A, Lift-6, 60Ft, Mirpur, Dhaka-1216',
             'zip' => '1216',
             'country' => 'Bangladesh',
             'status' => 'active',

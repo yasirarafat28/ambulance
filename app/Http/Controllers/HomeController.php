@@ -46,9 +46,8 @@ class HomeController extends Controller
 
     public function contact()
     {
-
-
-        return view('front.contact');
+        $setting = setting();
+        return view('front.contact',compact('setting'));
     }
 
     public function services()

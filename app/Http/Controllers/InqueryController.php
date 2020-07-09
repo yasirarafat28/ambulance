@@ -88,6 +88,13 @@ class InqueryController extends Controller
 
     public function InquerySubmit(Request $request)
     {
+
+        $this->validate($request,[
+            'subject'=>'required',
+            'message'=>'required',
+            'email'=>'required',
+            'name'=>'required',
+        ]);
         $inquery =new Inquery();
         $inquery->name =$request->name;
         $inquery->email =$request->email;
