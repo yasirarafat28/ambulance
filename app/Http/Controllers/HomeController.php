@@ -36,4 +36,46 @@ class HomeController extends Controller
 
         return view('front.index',compact('latest_news','faq_records','portfolio_records'));
     }
+
+    public function about()
+    {
+
+
+        return view('front.about');
+    }
+
+    public function contact()
+    {
+
+
+        return view('front.contact');
+    }
+
+    public function services()
+    {
+
+
+        return view('front.services');
+    }
+
+    public function reservation()
+    {
+
+
+        return view('front.reservation');
+    }
+
+    public function blogs()
+    {
+
+
+        return view('front.blog');
+    }
+
+    public function single_blog()
+    {
+
+
+        return view('front.blog-details');
+    }
 }

@@ -11,15 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'HomeController@index')->name('home');
-Route::post('/InquerySubmit', 'InqueryController@InquerySubmit')->name('InquerySubmit');
+Route::get('/services', 'HomeController@services');
+Route::get('/reservation', 'HomeController@reservation');
+Route::post('/reservation', 'HomeController@reservationSubmit')->name('reservationSubmit');
+Route::get('/blogs', 'HomeController@blogs');
+Route::get('/blog-details/{id?}/{slug?}', 'HomeController@single_blog');
+Route::get('/contact', 'HomeController@contact');
+Route::post('/contact', 'InqueryController@InquerySubmit')->name('submitFrontInquiry');
+Route::get('/about', 'HomeController@about');
 
 
 

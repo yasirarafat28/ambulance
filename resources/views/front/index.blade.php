@@ -1,893 +1,631 @@
+@extends('layouts.front')
+@section('content')
 
+    <!--================ Home Banner Area =================-->
+    <section class="home_banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="banner_content d-flex flex-md-row flex-column">
+                            <div class="banner-left text-md-right">
+                                <h1 class="text-uppercase">Solid Super Service</h1>
+                            </div>
+                            <div class="banner-right position-relative">
+                                <p>
+                                    If you are looking at blank cassettes on the web, you may be
+                                    very confused at the difference in price You may see some
+                                    for as low as each.
+                                </p>
+                                <a class="main_btn mt-md-0 mt-4" href="#">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Home Banner Area =================-->
 
-@include('front.inc.header')
-  <!-- Start Slider Area -->
-  <div id="home" class="slider-area">
-    <div class="bend niceties preview-2">
-      <div id="ensign-nivoslider" class="slides">
-        <img src="{{asset('front/img/slider/slider1.jpg')}}" alt="" title="#slider-direction-1" />
-        <img src="{{asset('front/img/slider/slider2.jpg')}}" alt="" title="#slider-direction-2" />
-        <img src="{{asset('front/img/slider/slider3.jpg')}}" alt="" title="#slider-direction-3" />
-      </div>
-
-      <!-- direction 1 -->
-      <div id="slider-direction-1" class="slider-direction slider-one">
+    <!--================ Feature Area =================-->
+    <section class="feature-area section_gap_top">
         <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">The Best Business Information </h2>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-feature">
+                                <img src="/front/img/feature/f1.png" alt="">
+                                <h4>Shipment Tracking</h4>
+                                <p>
+                                    The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
+                                </p>
+                                <a href="#">Find your cargo</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-feature">
+                                <img src="/front/img/feature/f2.png" alt="">
+                                <h4>Have a Question?</h4>
+                                <p>
+                                    The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
+                                </p>
+                                <a href="#">Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-feature">
+                                <img src="/front/img/feature/f3.png" alt="">
+                                <h4>Get a Quote</h4>
+                                <p>
+                                    The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
+                                </p>
+                                <a href="#">Start a quote</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-feature">
+                                <img src="/front/img/feature/f4.png" alt="">
+                                <h4>Shipping Calculator</h4>
+                                <p>
+                                    The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
+                                </p>
+                                <a href="#">Get Estimate</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">We're In The Business Of Helping You Start Your Business</h1>
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- direction 2 -->
-      <div id="slider-direction-2" class="slider-direction slider-two">
+                <div class="col-lg-5 offset-md-0 col-md-12 text-left section-title-wrap mt-4 mt-lg-0">
+                    <h5>About Our Company</h5>
+                    <h2>
+                        We’re Carefully <br>
+                        Delivering your <br>
+                        happiness.
+                    </h2>
+
+                    <h4>f you are looking at blank cassettes on the web lorem ipsum dolor sit consectetur adipisicing elit,
+                        eiusmod tempor incididunt.</h4>
+                    <p>
+                        If you are looking at blank cassettes on the web lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                    </p>
+                    <a href="#" class="main_btn">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Feature Area =================-->
+
+    <!--================ About Area =================-->
+    <section class="about-area">
         <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content text-center">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">The Best Business Information </h2>
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="row justify-content-center text-left section-title-wrap">
+                        <div class="col-lg-12">
+                            <h5>About Our Company</h5>
+                            <h2>
+                                Some statistics that we want <br>
+                                to show our viewers
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-6 single_brand">
+                                    <img src="/front/img/about/brand1.png" alt="">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-6 single_brand">
+                                    <img src="/front/img/about/brand2.png" alt="">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-6 single_brand">
+                                    <img src="/front/img/about/brand3.png" alt="">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-6 single_brand">
+                                    <img src="/front/img/about/brand4.png" alt="">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-6 single_brand">
+                                    <img src="/front/img/about/brand5.png" alt="">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-6 single_brand">
+                                    <img src="/front/img/about/brand6.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">We're In The Business Of Get Quality Business Service</h1>
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- direction 3 -->
-      <div id="slider-direction-3" class="slider-direction slider-two">
+                <div class="offset-lg-1 col-lg-4">
+                    <div class="about_box">
+                        <div class="activity">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-3 col-6">
+                                    <div class="activity_box">
+                                        <div>
+                                            <img src="/front/img/about/i1.png" alt="">
+                                        </div>
+                                        <h3>$<span class="counter">2500</span>+</h3>
+                                        <p>Packages Delivered</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-3 col-6">
+                                    <div class="activity_box">
+                                        <div>
+                                            <img src="/front/img/about/i2.png" alt="">
+                                        </div>
+                                        <h3>$<span class="counter">500</span>+</h3>
+                                        <p>Satisfied Clients</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-3 col-6">
+                                    <div class="activity_box">
+                                        <div>
+                                            <img src="/front/img/about/i3.png" alt="">
+                                        </div>
+                                        <h3>$<span class="counter">70</span>+</h3>
+                                        <p>Contries reach</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-3 col-6">
+                                    <div class="activity_box">
+                                        <div>
+                                            <img src="/front/img/about/i4.png" alt="">
+                                        </div>
+                                        <h3 class="counter">5000</h3>
+                                        <p>Tons of goods</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End About Area =================-->
+
+    <!--================ Start Service Area =================-->
+    <section class="service-area section_gap_top">
         <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">The Best business Information </h2>
+            <div class="row justify-content-center section-title-wrap">
+                <div class="col-lg-12">
+                    <h5>Our Offered Services</h5>
+                    <h2 class="text-white">
+                        We offer Various Services <br />
+                        to get you covered
+                    </h2>
                 </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Helping Business Security  & Peace of Mind for Your Family</h1>
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Slider Area -->
-
-  <!-- Start About area -->
-  <div id="about" class="about-area area-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="section-headline text-center">
-            <h2>About <a href="{{url('')}}">PrimoTech</a></h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <!-- single-well start-->
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="well-left">
-            <div class="single-well">
-              <a href="#">
-								  <img src="{{asset('images/Digital-marketing-banner_final.jpg')}}" alt="">
-								</a>
-            </div>
-          </div>
-        </div>
-        <!-- single-well end-->
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="well-middle">
-            <div class="single-well">
-              <!--<a href="#">
-                <h4 class="sec-head">project Maintenance</h4>
-              </a>-->
-              <p class="text-justify">
-                  <a href="{{url('')}}">PrimoTech</a> is one of the fast growing digital marketing media. We are a small team but we like how we are. We are a team of result oriented peoples and those who really know their business.
-                  <br>
-                  We are planning, implementing and getting things done from making websites work, providing 24/7 support, planning and carrying out various kinds of online marketing acts or organizing campaigns for social media and local and international marketing.
-                  <br>
-                  We are assisting the business owners to grow their business more. To grow your brand, you need effective advertising. To simply run ads isn’t enough; you need to craft campaigns that speak directly to your target audience, campaigns that excite and activate them.
-                  <br>
-                  “The <a href="{{url('')}}">PrimoTech</a> team has a great concept and work experience. We're proud and passionate about our work, and we’re ready to take your website to the next level.
-              </p>
-              <!--<ul>
-                <li>
-                  <i class="fa fa-check"></i> Interior design Package
-                </li>
-                <li>
-                  <i class="fa fa-check"></i> Building House
-                </li>
-                <li>
-                  <i class="fa fa-check"></i> Reparing of Residentail Roof
-                </li>
-                <li>
-                  <i class="fa fa-check"></i> Renovaion of Commercial Office
-                </li>
-                <li>
-                  <i class="fa fa-check"></i> Make Quality Products
-                </li>
-              </ul>-->
-            </div>
-          </div>
-        </div>
-        <!-- End col-->
-      </div>
-    </div>
-  </div>
-  <!-- End About area -->
-
-  <!-- Start Service area -->
-  <div id="services" class="services-area area-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="section-headline services-head text-center">
-            <h2>Our Services</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="services-contents">
-          <!-- Start Left services -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="about-move">
-              <div class="services-details">
-                <div class="single-services">
-                  <a class="services-icon" href="#">
-											<i class="fa fa-code"></i>
-										</a>
-                  <h4>Learn and adjust</h4>
-                  <p>Our online marketing team continually monitors your results at every step of the process, then leverages that to get you even more wins.</p>
-                </div>
-              </div>
-              <!-- end about-details -->
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="about-move">
-              <div class="services-details">
-                <div class="single-services">
-                  <a class="services-icon" href="#">
-											<i class="fa fa-camera-retro"></i>
-										</a>
-                  <h4>Digital Marketing </h4>
-                  <p>Digital Marketing is a must do marketing for any business. Through it a company can reach to its targeted customers. We provide a huge range of effective digital marketing campaigns.
-                  </p>
-                </div>
-              </div>
-              <!-- end about-details -->
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <!-- end col-md-4 -->
-            <div class=" about-move">
-              <div class="services-details">
-                <div class="single-services">
-                  <a class="services-icon" href="#">
-											<i class="fa fa-wordpress"></i>
-										</a>
-                  <h4>Online Advertising</h4>
-                  <p>
-                      Even if anyone has a tight budget, they can easily benefit through Google Ads. We’ll work on your budget and targeted customer. Here you can easily invest your budget according to your own plan.
-                  </p>
-                </div>
-              </div>
-              <!-- end about-details -->
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <!-- end col-md-4 -->
-            <div class=" about-move">
-              <div class="services-details">
-                <div class="single-services">
-                  <a class="services-icon" href="#">
-											<i class="fa fa-camera-retro"></i>
-										</a>
-                  <h4>Social Marketer </h4>
-                  <p>
-                      People across the globe spend a majority time in Social media every day. This is a best way to reach potential customers. We can plan and execute social media marketing on your behalf to make you a Social Superstar.
-                  </p>
-                </div>
-              </div>
-              <!-- end about-details -->
-            </div>
-          </div>
-          <!-- End Left services -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <!-- end col-md-4 -->
-            <div class=" about-move">
-              <div class="services-details">
-                <div class="single-services">
-                  <a class="services-icon" href="#">
-											<i class="fa fa-bar-chart"></i>
-										</a>
-                  <h4>Seo Expart</h4>
-                  <p>
-                      With more than a billion websites competing for the top spot in search results, it can be difficult to drive traffic to your site from search engines. We specialize in an innovative approach to SEO that uses white-hat tactics to put your website at the top of your target audience's searches.
-                  </p>
-                </div>
-              </div>
-              <!-- end about-details -->
-            </div>
-          </div>
-          <!-- End Left services -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <!-- end col-md-4 -->
-            <div class=" about-move">
-              <div class="services-details">
-                <div class="single-services">
-                  <a class="services-icon" href="#">
-											<i class="fa fa-ticket"></i>
-										</a>
-                  <h4>Content Writing</h4>
-                  <p>
-                      Content is key in social media. Without it, you are nothing.
-                      If you don’t think so, well, don’t expect great results.
-                  </p>
-                </div>
-              </div>
-              <!-- end about-details -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Service area -->
-
-  <!-- our-skill-area start -->
-  <div class="our-skill-area fix hidden-sm">
-    <div class="test-overly"></div>
-    <div class="skill-bg area-padding-2">
-      <div class="container">
-        <!-- section-heading end -->
-        <div class="row">
-          <div class="skill-text">
-            <!-- single-skill start -->
-            <div class="col-xs-12 col-sm-3 col-md-3 text-center">
-              <div class="single-skill">
-                <div class="progress-circular">
-                  <input type="text" class="knob" value="0" data-rel="95" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
-                  <h3 class="progress-h4">Social Media</h3>
-                </div>
-              </div>
-            </div>
-            <!-- single-skill end -->
-            <!-- single-skill start -->
-            <div class="col-xs-12 col-sm-3 col-md-3 text-center">
-              <div class="single-skill">
-                <div class="progress-circular">
-                  <input type="text" class="knob" value="0" data-rel="85" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
-                  <h3 class="progress-h4">Content Writing</h3>
-                </div>
-              </div>
-            </div>
-            <!-- single-skill end -->
-            <!-- single-skill start -->
-            <div class="col-xs-12 col-sm-3 col-md-3 text-center">
-              <div class="single-skill">
-                <div class="progress-circular">
-                  <input type="text" class="knob" value="0" data-rel="95" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
-                  <h3 class="progress-h4">Niche Marketing</h3>
-                </div>
-              </div>
-            </div>
-            <!-- single-skill end -->
-            <!-- single-skill start -->
-            <div class="col-xs-12 col-sm-3 col-md-3 text-center">
-              <div class="single-skill">
-                <div class="progress-circular">
-                  <input type="text" class="knob" value="0" data-rel="98" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
-                  <h3 class="progress-h4">Virtual Assistant</h3>
-                </div>
-              </div>
-            </div>
-            <!-- single-skill end -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- our-skill-area end -->
-
-  <!-- Faq area start -->
-  <div class="faq-area area-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="section-headline text-center">
-            <h2>Faq Question</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="faq-details">
-            <div class="panel-group" id="accordion">
-                @foreach($faq_records->where('type','accordian')->get() as $key=>$faq)
-                  <!-- Panel Default -->
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="check-title">
-                                                <a data-toggle="collapse" class="active" data-parent="#accordion" href="#check{{$key}}">
-                                                    <span class="acc-icons"></span>{{$faq->title}}
-                                                </a>
-                                            </h4>
+            <div class="row">
+                <div class="single-service col-lg-4 col-md-6">
+                    <div class="thumb">
+                        <img class="f-img img-fluid mx-auto" src="/front/img/service/service1.jpg" alt="" />
                     </div>
-                    <div id="check{{$key}}" class="panel-collapse collapse in">
-                      <div class="panel-body">
-                        <p>{{$faq->content}}</p>
-                      </div>
+                    <div class="service-box">
+                        <h3>
+                            Did not find <br />
+                            your Package
+                        </h3>
+                        <p>
+                            inappropriate behavior is often laughed off as boys will be boys
+                            women face in higher conduct standards.
+                        </p>
+                        <a href="#">Learn More</a>
                     </div>
-                  </div>
-                  <!-- End Panel Default -->
-                @endforeach
+                </div>
 
-
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="tab-menu">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-
-
-               @foreach(\App\Faq::where('status','active')->where('type','tab')->get() as $key=>$faq)
-                  <li class="{{$key==0?'active':''}}">
-                    <a href="#p-view-{{$key}}" role="tab" data-toggle="tab">{{$faq->title}}</a>
-                  </li>
-
-                @endforeach
-
-            </ul>
-          </div>
-          <div class="tab-content">
-              @foreach(\App\Faq::where('status','active')->where('type','tab')->get() as $key=>$faq)
-
-
-
-                <div class="tab-pane {{$key==0?'active':''}}" id="p-view-{{$key}}">
-                  <div class="tab-inner">
-                    <div class="event-content head-team">
-                      <h4>{{$faq->title}}</h4>
-                        <p>{{$faq->content}}</p>
+                <div class="single-service col-lg-4 col-md-6">
+                    <div class="thumb">
+                        <img class="f-img img-fluid mx-auto" src="/front/img/service/service2.jpg" alt="" />
                     </div>
-                  </div>
-                </div>
-
-              @endforeach
-
-
-
-          </div>
-        </div>
-      </div>
-      <!-- end Row -->
-    </div>
-  </div>
-  <!-- End Faq Area -->
-
-  <!-- Start Wellcome Area -->
-  <div class="wellcome-area">
-    <div class="well-bg">
-      <div class="test-overly"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="wellcome-text">
-              <div class="well-text text-center">
-                <h2>Welcome To Our eBusiness</h2>
-                <p>
-                  Busuness Lorem ipsum dolor sit amet, consectetur adipiscing elit.luctus est eget congue.
-                </p>
-                <div class="subs-feilds">
-                  <div class="suscribe-input">
-                    <input type="email" class="email form-control width-80" id="sus_email" placeholder="Email">
-                    <button type="submit" id="sus_submit" class="add-btn width-20">Subscribe</button>
-                    <div id="msg_Submit" class="h3 text-center hidden"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Wellcome Area -->
-
-  <!-- Start team Area -->
-  <div id="team" class="our-team-area area-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="section-headline text-center">
-            <h2>Our special Team</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="team-top">
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="single-team-member">
-              <div class="team-img">
-                <a href="#">
-										<img src="{{asset('front/img/team/1.jpg')}}" alt="">
-									</a>
-                <div class="team-social-icon text-center">
-                  <ul>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-facebook"></i>
-												</a>
-                    </li>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-twitter"></i>
-												</a>
-                    </li>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-instagram"></i>
-												</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="team-content text-center">
-                <h4>Jhon Mickel</h4>
-                <p>Seo</p>
-              </div>
-            </div>
-          </div>
-          <!-- End column -->
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="single-team-member">
-              <div class="team-img">
-                <a href="#">
-										<img src="{{asset('front/img/team/2.jpg')}}" alt="">
-									</a>
-                <div class="team-social-icon text-center">
-                  <ul>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-facebook"></i>
-												</a>
-                    </li>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-twitter"></i>
-												</a>
-                    </li>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-instagram"></i>
-												</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="team-content text-center">
-                <h4>Andrew Arnold</h4>
-                <p>Web Developer</p>
-              </div>
-            </div>
-          </div>
-          <!-- End column -->
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="single-team-member">
-              <div class="team-img">
-                <a href="#">
-										<img src="{{asset('front/img/team/3.jpg')}}" alt="">
-									</a>
-                <div class="team-social-icon text-center">
-                  <ul>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-facebook"></i>
-												</a>
-                    </li>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-twitter"></i>
-												</a>
-                    </li>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-instagram"></i>
-												</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="team-content text-center">
-                <h4>Lellien Linda</h4>
-                <p>Web Design</p>
-              </div>
-            </div>
-          </div>
-          <!-- End column -->
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="single-team-member">
-              <div class="team-img">
-                <a href="#">
-										<img src="{{asset('front/img/team/4.jpg')}}" alt="">
-									</a>
-                <div class="team-social-icon text-center">
-                  <ul>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-facebook"></i>
-												</a>
-                    </li>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-twitter"></i>
-												</a>
-                    </li>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-instagram"></i>
-												</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="team-content text-center">
-                <h4>Jhon Powel</h4>
-                <p>Seo Expert</p>
-              </div>
-            </div>
-          </div>
-          <!-- End column -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Team Area -->
-
-  <!-- Start reviews Area -->
-  <div class="reviews-area hidden-xs">
-    <div class="work-us">
-      <div class="work-left-text">
-        <a href="#">
-						<img src="{{asset('images/Digital-marketing-banner_final.jpg')}}" alt="">
-					</a>
-      </div>
-      <div class="work-right-text text-center">
-        <h2>working with us</h2>
-        <h5>Web Design, Ready Home, Construction and Co-operate Outstanding Buildings.</h5>
-        <a href="#contact" class="ready-btn">Contact us</a>
-      </div>
-    </div>
-  </div>
-  <!-- End reviews Area -->
-
-  <!-- Start portfolio Area -->
-  <div id="portfolio" class="portfolio-area area-padding fix">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div class="section-headline text-center">
-            <h2>Our Portfolio</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <!-- Start Portfolio -page -->
-        <!--<div class="awesome-project-1 fix">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="awesome-menu ">
-              <ul class="project-menu">
-                <li>
-                  <a href="#" class="active" data-filter="*">All</a>
-                </li>
-                <li>
-                  <a href="#" data-filter=".development">Development</a>
-                </li>
-                <li>
-                  <a href="#" data-filter=".design">Design</a>
-                </li>
-                <li>
-                  <a href="#" data-filter=".photo">Photoshop</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>-->
-        <div class="awesome-project-content">
-            @foreach($portfolio_records as $portfolio)
-              <!-- single-awesome-project start -->
-              <div class="col-md-4 col-sm-4 col-xs-12 design development">
-                <div class="single-awesome-project">
-                  <div class="awesome-img">
-                    <a href="#"><img src="{{asset($portfolio->image??'')}}" alt=""  onerror="this.onerror=null;this.src='images/noimg.jpg';"  /></a>
-                    <div class="add-actions text-center">
-                      <div class="project-dec">
-                        <a class="venobox" data-gall="myGallery" href="{{asset('front/img/portfolio/1.jpg')}}">
-                          <h4>{{$portfolio->name}}</h4>
-                          <span>{{$portfolio->content}}</span>
-                        </a>
-                      </div>
+                    <div class="service-box">
+                        <h3>
+                            Did not find <br />
+                            your Package
+                        </h3>
+                        <p>
+                            inappropriate behavior is often laughed off as boys will be boys
+                            women face in higher conduct standards.
+                        </p>
+                        <a href="#">Learn More</a>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <!-- single-awesome-project end -->
-            @endforeach
 
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Start Testimonials -->
-  <div class="testimonials-area">
-    <div class="testi-inner area-padding">
-      <div class="testi-overly"></div>
-      <div class="container ">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <!-- Start testimonials Start -->
-            <div class="testimonial-content text-center">
-              <a class="quate" href="#"><i class="fa fa-quote-right"></i></a>
-              <!-- start testimonial carousel -->
-              <div class="testimonial-carousel">
-                <div class="single-testi">
-                  <div class="testi-text">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.<br>consectetur adipiscing elit. Sed pulvinar luctus est eget congue.
-                    </p>
-                    <h6>Boby</h6>
-                  </div>
+                <div class="single-service col-lg-4 col-md-6">
+                    <div class="thumb">
+                        <img class="f-img img-fluid mx-auto" src="/front/img/service/service3.jpg" alt="" />
+                    </div>
+                    <div class="service-box">
+                        <h3>
+                            Did not find <br />
+                            your Package
+                        </h3>
+                        <p>
+                            inappropriate behavior is often laughed off as boys will be boys
+                            women face in higher conduct standards.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
                 </div>
-                <!-- End single item -->
-                <div class="single-testi">
-                  <div class="testi-text">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.<br>consectetur adipiscing elit. Sed pulvinar luctus est eget congue.
-                    </p>
-                    <h6>Jhon</h6>
-                  </div>
-                </div>
-                <!-- End single item -->
-                <div class="single-testi">
-                  <div class="testi-text">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.<br>consectetur adipiscing elit. Sed pulvinar luctus est eget congue.
-                    </p>
-                    <h6>Fleming</h6>
-                  </div>
-                </div>
-                <!-- End single item -->
-              </div>
             </div>
-            <!-- End testimonials end -->
-          </div>
-          <!-- End Right Feature -->
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Testimonials -->
+    </section>
+    <!--================ end Service Area =================-->
 
-@if(sizeof($latest_news) >0 )
-  <!-- Start Blog Area -->
-  <div id="blog" class="blog-area">
-    <div class="blog-inner area-padding">
-      <div class="blog-overly"></div>
-      <div class="container ">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="section-headline text-center">
-              <h2>Latest News</h2>
+    <!--================ Start Quote Area =================-->
+    <section class="quote-area">
+        <div class="container">
+            <div class="row justify-content-center text-left section-title-wrap">
+                <div class="col-lg-12">
+                    <h5>Get a quote now!</h5>
+                    <h2 class="text-white">
+                        Check the estimated cost for <br>
+                        your requesting goods
+                    </h2>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-12">
+                    <div class="estimated-cost">
+                        <form class="form-wrap" action="#">
+                            <nav>
+                                <div class="nav nav-tabs justify-content-md-start justify-content-center" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-getEstimation-tab" data-toggle="tab" href="#nav-getEstimation"
+                                       role="tab" aria-controls="nav-getEstimation" aria-selected="true">Get an estimation</a>
+                                    <a class="nav-item nav-link" id="nav-trackShipment-tab" data-toggle="tab" href="#nav-trackShipment"
+                                       role="tab" aria-controls="nav-trackShipment" aria-selected="false">Track Shipment</a>
+                                </div>
+                            </nav>
 
-            @foreach($latest_news??array() as $blog)
+                            <!-- Tab Content -->
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-getEstimation" role="tabpanel" aria-labelledby="nav-getEstimation-tab">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="firstName">First name</label>
+                                                <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="Enter first name"
+                                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter first name'" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="lastName">Last name</label>
+                                                <input type="text" class="form-control" id="lastName" placeholder="Enter last name" onfocus="this.placeholder = ''"
+                                                       onblur="this.placeholder = 'Enter last name'" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="emailAddress">Email Address</label>
+                                                <input type="email" class="form-control" id="emailAddress" placeholder="Enter email address"
+                                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="cargoType">Cargo Type</label>
+                                                <input type="text" class="form-control" id="cargoType" placeholder="Enter cargo type" onfocus="this.placeholder = ''"
+                                                       onblur="this.placeholder = 'Enter cargo type'" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="countryOfOrigin">Country of Origin</label>
+                                                <input type="text" class="form-control" id="countryOfOrigin" placeholder="Enter country of origin"
+                                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter country of origin'" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="destination">Destination</label>
+                                                <input type="text" class="form-control" id="destination" placeholder="Enter destination"
+                                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter destination'" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <label for="quantity">Quantity</label>
+                                                <input type="text" class="form-control" id="quantity" placeholder="Enter quantity" onfocus="this.placeholder = ''"
+                                                       onblur="this.placeholder = 'Enter quantity'" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <label for="weight">Weight</label>
+                                                <input type="text" class="form-control" id="weight" placeholder="Enter weight" onfocus="this.placeholder = ''"
+                                                       onblur="this.placeholder = 'Enter weight'" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <label for="width">Width</label>
+                                                <input type="text" class="form-control" id="width" placeholder="Enter width" onfocus="this.placeholder = ''"
+                                                       onblur="this.placeholder = 'Enter width'" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <label for="height">Height</label>
+                                                <input type="text" class="form-control" id="height" placeholder="Enter height" onfocus="this.placeholder = ''"
+                                                       onblur="this.placeholder = 'Enter height'" />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 mt-4">
+                                            <div class="text-center confirm_btn_box">
+                                                <button class="main_btn text-uppercase">Request a Quote</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
 
-              <!-- Start Left Blog -->
-              <div class="col-md-4 col-sm-4 col-xs-12">
-                <div class="single-blog">
-                  <div class="single-blog-img">
-                    <a href="blog.html">
-                                            <img src="{{asset($blog->image??'')}}"  onerror="this.onerror=null;this.src='images/noimg.jpg';" >
-                                        </a>
-                  </div>
-                  <div class="blog-meta">
-                    <!--<span class="comments-type">
-                                            <i class="fa fa-comment-o"></i>
-                                            <a href="#">13 comments</a>
-                                        </span>-->
-                    <span class="date-type">
-                                            <i class="fa fa-calendar"></i>{{$blog->created_at}}
-                                        </span>
-                  </div>
-                  <div class="blog-text">
-                    <h4>
-                                            <a href="blog.html">{{$blog->title}}</a>
-                                        </h4>
-                    <p>
-                      {{strip_tags($blog->content)}}
-                    </p>
-                  </div>
-                  <span>
-                                        <a href="{{url('blogDetails/'.$blog->id)}}" class="ready-btn">Read more</a>
-                                    </span>
+                                <div class="tab-pane fade" id="nav-trackShipment" role="tabpanel" aria-labelledby="nav-trackShipment-tab">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="firstName2">First name</label>
+                                                <input type="text" class="form-control" id="firstName2" aria-describedby="emailHelp"
+                                                       placeholder="Enter first name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter first name'" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="lastName2">Last name</label>
+                                                <input type="text" class="form-control" id="lastName2" placeholder="Enter last name" onfocus="this.placeholder = ''"
+                                                       onblur="this.placeholder = 'Enter last name'" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="emailAddress2">Email Address</label>
+                                                <input type="email" class="form-control" id="emailAddress2" placeholder="Enter email address"
+                                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="cargoType2">Cargo Type</label>
+                                                <input type="text" class="form-control" id="cargoType2" placeholder="Enter cargo type" onfocus="this.placeholder = ''"
+                                                       onblur="this.placeholder = 'Enter cargo type'" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="countryOfOrigin2">Country of Origin</label>
+                                                <input type="text" class="form-control" id="countryOfOrigin2" placeholder="Enter country of origin"
+                                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter country of origin'" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="destination2">Destination</label>
+                                                <input type="text" class="form-control" id="destination2" placeholder="Enter destination"
+                                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter destination'" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <label for="quantity2">Quantity</label>
+                                                <input type="text" class="form-control" id="quantity2" placeholder="Enter quantity" onfocus="this.placeholder = ''"
+                                                       onblur="this.placeholder = 'Enter quantity'" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <label for="weight2">Weight</label>
+                                                <input type="text" class="form-control" id="weight2" placeholder="Enter weight" onfocus="this.placeholder = ''"
+                                                       onblur="this.placeholder = 'Enter weight'" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <label for="width2">Width</label>
+                                                <input type="text" class="form-control" id="width2" placeholder="Enter width" onfocus="this.placeholder = ''"
+                                                       onblur="this.placeholder = 'Enter width'" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <label for="height2">Height</label>
+                                                <input type="text" class="form-control" id="height2" placeholder="Enter height" onfocus="this.placeholder = ''"
+                                                       onblur="this.placeholder = 'Enter height'" />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 mt-4">
+                                            <div class="text-center confirm_btn_box">
+                                                <button class="main_btn text-uppercase">Request a Quote</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <!-- Start single blog -->
-              </div>
-
-            @endforeach
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Blog -->
-
-  @endif
-  <!-- Start Suscrive Area -->
-  <div class="suscribe-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
-          <div class="suscribe-text text-center">
-            <h3>Welcome to our <a href="{{url('/')}}">PrimoTech</a></h3>
-            <a class="sus-btn" href="#">Get A quate</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Suscrive Area -->
-  <!-- Start contact Area -->
-  <div id="contact" class="contact-area">
-    <div class="contact-inner area-padding">
-      <div class="contact-overly"></div>
-      <div class="container ">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="section-headline text-center">
-              <h2>Contact us</h2>
             </div>
-          </div>
         </div>
-        <div class="row">
-          <!-- Start contact icon column -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="contact-icon text-center">
-              <div class="single-icon">
-                <i class="fa fa-mobile"></i>
-                <p>
-                  Call: +88 01770004481<br>
-                  <span>Monday-Friday (9am-5pm)</span>
-                </p>
-              </div>
+    </section>
+    <!--================ End Quote Area =================-->
+
+    <!--================ Start Testimonial Area =================-->
+    <section class="testimonial-area section_gap_top">
+        <div class="container">
+            <div class="row justify-content-center section-title-wrap">
+                <div class="col-lg-12">
+                    <h5>User Feedback</h5>
+                    <h2>
+                        What our customers feedback <br>
+                        for amazing service.
+                    </h2>
+                </div>
             </div>
-          </div>
-          <!-- Start contact icon column -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="contact-icon text-center">
-              <div class="single-icon">
-                <i class="fa fa-envelope-o"></i>
-                <p>
-                  Email:  <a href="mailto:sajib@primotech.xyz"> sajib@primotech.xyz</a><br>
-                  <span>Web: {{url('/')}}</span>
-                </p>
-              </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel active_testimonial">
+                        <!-- single testi -->
+                        <div class="single_testi">
+                            <div class="testi_content">
+                                <p>
+                                    “Us multiply given in all hath given may meat god won't abundantly appear lights fourth madman man
+                                    said god dominion great. Gathering called very. Midst shall after created from fruitful. Place sea
+                                    upon air. Female beast midst fly morning after light creepeth”
+                                </p>
+                            </div>
+                            <div class="testi_author d-flex justify-content-center align-items-center">
+                                <div class="thumb mr-4"><img src="/front/img/testi-author.png" alt=""></div>
+                                <div class="a-desc text-left">
+                                    <h6>Marvel Maison</h6>
+                                    <p>Chief Executive, Amazon</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single testi -->
+                        <div class="single_testi">
+                            <div class="testi_content">
+                                <p>
+                                    “Us multiply given in all hath given may meat god won't abundantly appear lights fourth madman man
+                                    said god dominion great. Gathering called very. Midst shall after created from fruitful. Place sea
+                                    upon air. Female beast midst fly morning after light creepeth”
+                                </p>
+                            </div>
+                            <div class="testi_author d-flex justify-content-center align-items-center">
+                                <div class="thumb mr-4"><img src="/front/img/testi-author.png" alt=""></div>
+                                <div class="a-desc text-left">
+                                    <h6>Marvel Maison</h6>
+                                    <p>Chief Executive, Amazon</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- Start contact icon column -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="contact-icon text-center">
-              <div class="single-icon">
-                <i class="fa fa-map-marker"></i>
-                <p>
-                  Location: 430/1 South Paikpara<br>
-                  <span>Kollayanpur-1207, Dhaka, Bangladesh</span>
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="row">
+    </section>
+    <!--================ end Testimonial Area =================-->
 
-          <!-- Start Google Map -->
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <!-- Start Map -->
-            <iframe src="https://www.google.com/maps/place/Amtola+Bazaar/@23.785286,90.367688,13z/data=!4m5!3m4!1s0x0:0x938b002a16b67d93!8m2!3d23.7852859!4d90.3676879?hl=en-US" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <!-- End Map -->
-          </div>
-          <!-- End Google Map -->
-
-            @if(session()->has('success'))
-                <div class="alert alert-success">
-                    {{ session('success') }}
+    <!--================ Start Home Blog Area =================-->
+    <section class="home-blog-area">
+        <div class="container">
+            <div class="row justify-content-center section-title-wrap">
+                <div class="col-lg-12">
+                    <h5>Latest Blog Posts</h5>
+                    <h2>
+                        Check the latest posts <br />
+                        from our blog
+                    </h2>
                 </div>
-            @endif
-
-            @if($errors->any())
-                <div class="alert alert-danger">
-                    {{ $errors->first() }}
-                </div>
-            @endif
-
-
-          <!-- Start  contact -->
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="form contact-form">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-              <form action="{{route('InquerySubmit')}}" method="POST" >
-                  {{csrf_field()}}
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validation"></div>
-                </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
-              </form>
             </div>
-          </div>
-          <!-- End Left contact -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-home-blog">
+                        <div class="thumb">
+                            <img class="f-img img-fluid mx-auto" src="/front/img/home-post/blog1.jpg" alt="" />
+                        </div>
+                        <div class="home-blog-box">
+                            <a href="#">
+                                <h4>Some statistics that we want to show</h4>
+                            </a>
+                            <p>
+                                If you are looking at blank cassettes
+                                on the web lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                            <div class="bottom d-flex">
+                                <a href="#">13th Mar, 2019</a>
+                                <a href="#">02 Comments</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-home-blog">
+                        <div class="thumb">
+                            <img class="f-img img-fluid mx-auto" src="/front/img/home-post/blog2.jpg" alt="" />
+                        </div>
+                        <div class="home-blog-box">
+                            <a href="#">
+                                <h4>Some statistics that we want to show</h4>
+                            </a>
+                            <p>
+                                If you are looking at blank cassettes
+                                on the web lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                            <div class="bottom d-flex">
+                                <a href="#">13th Mar, 2019</a>
+                                <a href="#">02 Comments</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-sm-block d-none">
+                    <div class="single-home-blog">
+                        <div class="thumb">
+                            <img class="f-img img-fluid mx-auto invisible" src="/front/img/home-post/blog2.jpg" alt="" />
+                        </div>
+                        <img src="/front/img/home-post/blog3.jpg" class="img-fluid large-img" alt="">
+                        <div class="overlay"></div>
+                        <div class="home-blog-box border-0">
+                            <a href="#">
+                                <h4 class="text-white">Some statistics that we want to show</h4>
+                            </a>
+                            <p>
+                                If you are looking at blank cassettes
+                                on the web lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                            <div class="bottom d-flex">
+                                <a href="#">13th Mar, 2019</a>
+                                <a href="#">02 Comments</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Contact Area -->
+    </section>
+    <!--================ end Home Blog Area =================-->
 
-
-  @include('front.inc.footer')
+    <!--================ Start CTA Area ================-->
+    <section class="cta_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cta_inner d-flex flex-md-row flex-column justify-content-between align-items-center">
+                        <div class="mb-md-0 mb-4 text-sm-left text-center">
+                            <p>Get a quick response from our team</p>
+                            <h1>Please feel free to reach us</h1>
+                        </div>
+                        <div class="">
+                            <a href="#" class="main_btn">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End CTA Area ================-->
+@endsection

@@ -1,574 +1,359 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>eBusiness Bootstrap Template</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+@extends('layouts.front')
+@section('content')
 
-  <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
-  <link href="lib/owlcarousel/owl.carousel.css" rel="stylesheet">
-  <link href="lib/owlcarousel/owl.transitions.css" rel="stylesheet">
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/venobox/venobox.css" rel="stylesheet">
-
-  <!-- Nivo Slider Theme -->
-  <link href="css/nivo-slider-theme.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-
-  <!-- Responsive Stylesheet File -->
-  <link href="css/responsive.css" rel="stylesheet">
-
-  <!-- =======================================================
-    Theme Name: eBusiness
-    Theme URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
-</head>
-
-<body data-spy="scroll" data-target="#navbar-example">
-
-  <div id="preloader"></div>
-
-  <header>
-    <!-- header-area start -->
-    <div id="sticker" class="header-area">
+  <!--================ Home Banner Area =================-->
+  <section class="home_banner_area banner-area">
+    <div class="banner_inner d-flex align-items-center">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 col-sm-12">
-
-            <!-- Navigation -->
-            <nav class="navbar navbar-default">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-                <!-- Brand -->
-                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
-                  <h1><span>e</span>Business</h1>
-                  <!-- Uncomment below if you prefer to use an image logo -->
-                  <!-- <img src="img/logo.png" alt="" title=""> -->
-								</a>
+          <div class="col-lg-7">
+            <div class="banner_content d-flex flex-md-row flex-column">
+              <div class="banner-left text-md-right">
+                <h1 class="text-uppercase">Blog Page</h1>
               </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
-                <ul class="nav navbar-nav navbar-right">
-                  <li class="active">
-                    <a class="page-scroll" href="#home">Home</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#about">About</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#services">Services</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#team">Team</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#portfolio">Portfolio</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#blog">Blog</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                  </li>
-                </ul>
-              </div>
-              <!-- navbar-collapse -->
-            </nav>
-            <!-- END: Navigation -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- header-area end -->
-  </header>
-  <!-- header end -->
-
-  <!-- Start Bottom Header -->
-  <div class="header-bg page-area">
-    <div class="home-overly"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="slider-content text-center">
-            <div class="header-bottom">
-              <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                <h1 class="title2">My Blog</h1>
-              </div>
-              <div class="layer3 wow zoomInUp" data-wow-duration="2s" data-wow-delay="1s">
-                <h2 class="title3">Profesional Blog Page</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- END Header -->
-  <div class="blog-page area-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <div class="page-head-blog">
-            <div class="single-blog-page">
-              <!-- search option start -->
-              <form action="#">
-                <div class="search-option">
-                  <input type="text" placeholder="Search...">
-                  <button class="button" type="submit">
-                                            <i class="fa fa-search"></i>
-                                        </button>
-                </div>
-              </form>
-              <!-- search option end -->
-            </div>
-            <div class="single-blog-page">
-              <!-- recent start -->
-              <div class="left-blog">
-                <h4>recent post</h4>
-                <div class="recent-post">
-                  <!-- start single post -->
-                  <div class="recent-single-post">
-                    <div class="post-img">
-                      <a href="#">
-												   <img src="img/blog/1.jpg" alt="">
-												</a>
-                    </div>
-                    <div class="pst-content">
-                      <p><a href="#"> Redug Lerse dolor sit amet consect adipis elit.</a></p>
-                    </div>
-                  </div>
-                  <!-- End single post -->
-                  <!-- start single post -->
-                  <div class="recent-single-post">
-                    <div class="post-img">
-                      <a href="#">
-												   <img src="img/blog/2.jpg" alt="">
-												</a>
-                    </div>
-                    <div class="pst-content">
-                      <p><a href="#"> Redug Lerse dolor sit amet consect adipis elit.</a></p>
-                    </div>
-                  </div>
-                  <!-- End single post -->
-                  <!-- start single post -->
-                  <div class="recent-single-post">
-                    <div class="post-img">
-                      <a href="#">
-												   <img src="img/blog/3.jpg" alt="">
-												</a>
-                    </div>
-                    <div class="pst-content">
-                      <p><a href="#"> Redug Lerse dolor sit amet consect adipis elit.</a></p>
-                    </div>
-                  </div>
-                  <!-- End single post -->
-                  <!-- start single post -->
-                  <div class="recent-single-post">
-                    <div class="post-img">
-                      <a href="#">
-												   <img src="img/blog/4.jpg" alt="">
-												</a>
-                    </div>
-                    <div class="pst-content">
-                      <p><a href="#"> Redug Lerse dolor sit amet consect adipis elit.</a></p>
-                    </div>
-                  </div>
-                  <!-- End single post -->
-                </div>
-              </div>
-              <!-- recent end -->
-            </div>
-            <div class="single-blog-page">
-              <div class="left-blog">
-                <h4>categories</h4>
-                <ul>
-                  <li>
-                    <a href="#">Portfolio</a>
-                  </li>
-                  <li>
-                    <a href="#">Project</a>
-                  </li>
-                  <li>
-                    <a href="#">Design</a>
-                  </li>
-                  <li>
-                    <a href="#">wordpress</a>
-                  </li>
-                  <li>
-                    <a href="#">Joomla</a>
-                  </li>
-                  <li>
-                    <a href="#">Html</a>
-                  </li>
-                  <li>
-                    <a href="#">Website</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="single-blog-page">
-              <div class="left-blog">
-                <h4>archive</h4>
-                <ul>
-                  <li>
-                    <a href="#">07 July 2016</a>
-                  </li>
-                  <li>
-                    <a href="#">29 June 2016</a>
-                  </li>
-                  <li>
-                    <a href="#">13 May 2016</a>
-                  </li>
-                  <li>
-                    <a href="#">20 March 2016</a>
-                  </li>
-                  <li>
-                    <a href="#">09 Fabruary 2016</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="single-blog-page">
-              <div class="left-tags blog-tags">
-                <div class="popular-tag left-side-tags left-blog">
-                  <h4>popular tags</h4>
-                  <ul>
-                    <li>
-                      <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                      <a href="#">Project</a>
-                    </li>
-                    <li>
-                      <a href="#">Design</a>
-                    </li>
-                    <li>
-                      <a href="#">Website</a>
-                    </li>
-                    <li>
-                      <a href="#">Joomla</a>
-                    </li>
-                    <li>
-                      <a href="#">Html</a>
-                    </li>
-                    <li>
-                      <a href="#">wordpress</a>
-                    </li>
-                    <li>
-                      <a href="#">Masonry</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End left sidebar -->
-        <!-- Start single blog -->
-        <div class="col-md-8 col-sm-8 col-xs-12">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="single-blog">
-                <div class="single-blog-img">
-                  <a href="blog-details.html">
-											<img src="img/blog/1.jpg" alt="">
-										</a>
-                </div>
-                <div class="blog-meta">
-                  <span class="comments-type">
-											<i class="fa fa-comment-o"></i>
-											<a href="#">11 comments</a>
-										</span>
-                  <span class="date-type">
-											<i class="fa fa-calendar"></i>2016-03-05 / 09:10:16
-										</span>
-                </div>
-                <div class="blog-text">
-                  <h4>
-											<a href="#">Post my imagine Items</a>
-										</h4>
-                  <p>
-                    Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit.
-                  </p>
-                </div>
-                <span>
-										<a href="blog-details.html" class="ready-btn">Read more</a>
-									</span>
-              </div>
-            </div>
-            <!-- End single blog -->
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="single-blog">
-                <div class="single-blog-img">
-                  <a href="blog-details.html">
-											<img src="img/blog/2.jpg" alt="">
-										</a>
-                </div>
-                <div class="blog-meta">
-                  <span class="comments-type">
-											<i class="fa fa-comment-o"></i>
-											<a href="#">7 comments</a>
-										</span>
-                  <span class="date-type">
-											<i class="fa fa-calendar"></i>2016-03-05 / 09:10:16
-										</span>
-                </div>
-                <div class="blog-text">
-                  <h4>
-											<a href="#">Post my imagine Items</a>
-										</h4>
-                  <p>
-                    Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit.
-                  </p>
-                </div>
-                <span>
-										<a href="blog-details.html" class="ready-btn">Read more</a>
-									</span>
-              </div>
-            </div>
-            <!-- Start single blog -->
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="single-blog">
-                <div class="single-blog-img">
-                  <a href="blog-details.html">
-											<img src="img/blog/3.jpg" alt="">
-										</a>
-                </div>
-                <div class="blog-meta">
-                  <span class="comments-type">
-											<i class="fa fa-comment-o"></i>
-											<a href="#">13 comments</a>
-										</span>
-                  <span class="date-type">
-											<i class="fa fa-calendar"></i>2016-03-05 / 09:10:16
-										</span>
-                </div>
-                <div class="blog-text">
-                  <h4>
-											<a href="#">Post my imagine Items</a>
-										</h4>
-                  <p>
-                    Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit.
-                  </p>
-                </div>
-                <span>
-										<a href="blog-details.html" class="ready-btn">Read more</a>
-									</span>
-              </div>
-            </div>
-            <!-- End single blog -->
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="single-blog">
-                <div class="single-blog-img">
-                  <a href="blog-details.html">
-											<img src="img/blog/4.jpg" alt="">
-										</a>
-                </div>
-                <div class="blog-meta">
-                  <span class="comments-type">
-											<i class="fa fa-comment-o"></i>
-											<a href="#">1 comments</a>
-										</span>
-                  <span class="date-type">
-											<i class="fa fa-calendar"></i>2016-03-05 / 09:10:16
-										</span>
-                </div>
-                <div class="blog-text">
-                  <h4>
-											<a href="#">Post my imagine Items</a>
-										</h4>
-                  <p>
-                    Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit.
-                  </p>
-                </div>
-                <span>
-										<a href="blog-details.html" class="ready-btn">Read more</a>
-									</span>
-              </div>
-            </div>
-            <!-- Start single blog -->
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="single-blog">
-                <div class="single-blog-img">
-                  <a href="blog-details.html">
-											<img src="img/blog/5.jpg" alt="">
-										</a>
-                </div>
-                <div class="blog-meta">
-                  <span class="comments-type">
-											<i class="fa fa-comment-o"></i>
-											<a href="#">10 comments</a>
-										</span>
-                  <span class="date-type">
-											<i class="fa fa-calendar"></i>2016-03-05 / 09:10:16
-										</span>
-                </div>
-                <div class="blog-text">
-                  <h4>
-											<a href="#">Post my imagine Items</a>
-										</h4>
-                  <p>
-                    Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit.
-                  </p>
-                </div>
-                <span>
-										<a href="blog-details.html" class="ready-btn">Read more</a>
-									</span>
-              </div>
-            </div>
-            <!-- End single blog -->
-            <div class="blog-pagination">
-              <ul class="pagination">
-                <li><a href="#">&lt;</a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">&gt;</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Blog Area -->
-
-  <div class="clearfix"></div>
-
-  <!-- Start Footer bottom Area -->
-  <footer>
-    <div class="footer-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <div class="footer-logo">
-                  <h2><span>e</span>Business</h2>
-                </div>
-
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
-                <div class="footer-icons">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-google"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-pinterest"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end single footer -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <h4>information</h4>
+              <div class="banner-right position-relative">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                  If you are looking at blank cassettes on the web, you may be very confused.
                 </p>
-                <div class="footer-contacts">
-                  <p><span>Tel:</span> +123 456 789</p>
-                  <p><span>Email:</span> contact@example.com</p>
-                  <p><span>Working Hours:</span> 9am-5pm</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end single footer -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <h4>Instagram</h4>
-                <div class="flicker-img">
-                  <a href="#"><img src="img/portfolio/1.jpg" alt=""></a>
-                  <a href="#"><img src="img/portfolio/2.jpg" alt=""></a>
-                  <a href="#"><img src="img/portfolio/3.jpg" alt=""></a>
-                  <a href="#"><img src="img/portfolio/4.jpg" alt=""></a>
-                  <a href="#"><img src="img/portfolio/5.jpg" alt=""></a>
-                  <a href="#"><img src="img/portfolio/6.jpg" alt=""></a>
-                </div>
+                <span class="main_btn mt-4 mt-md-0" href="#">
+                  <a href="index.html" class="text-white">Home</a>
+                  <i class="fa fa-arrow-right mx-2"></i>
+                  <a href="blog.html" class="text-white">Blog</a>
+                </span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer-area-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="copyright text-center">
-              <p>
-                &copy; Copyright <strong>eBusiness</strong>. All Rights Reserved
-              </p>
+  </section>
+  <!--================ End Home Banner Area =================-->
+
+    <!--================Blog Area =================-->
+    <section class="blog_area section_gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-5 mb-lg-0">
+                    <div class="blog_left_sidebar">
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/blog/main-blog/m-blog-1.jpg" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>15</h3>
+                                    <p>Jan</p>
+                                </a>
+                            </div>
+
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="blog-details.html">
+                                    <h2>Google inks pact for new 35-storey office</h2>
+                                </a>
+                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                    he earth it first without heaven in place seed it second morning saying.</p>
+                                <ul class="blog-info-link">
+                                    <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
+                                    <li><a href="#"><i class="fa fa-comment-o"></i> 03 Comments</a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/blog/main-blog/m-blog-2.jpg" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>15</h3>
+                                    <p>Jan</p>
+                                </a>
+                            </div>
+
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="blog-details.html">
+                                    <h2>Google inks pact for new 35-storey office</h2>
+                                </a>
+                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                    he earth it first without heaven in place seed it second morning saying.</p>
+                                <ul class="blog-info-link">
+                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
+                                        <li><a href="#"><i class="fa fa-comment-o"></i> 03 Comments</a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/blog/main-blog/m-blog-3.jpg" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>15</h3>
+                                    <p>Jan</p>
+                                </a>
+                            </div>
+
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="blog-details.html">
+                                    <h2>Google inks pact for new 35-storey office</h2>
+                                </a>
+                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                    he earth it first without heaven in place seed it second morning saying.</p>
+                                <ul class="blog-info-link">
+                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
+                                        <li><a href="#"><i class="fa fa-comment-o"></i> 03 Comments</a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/blog/main-blog/m-blog-4.jpg" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>15</h3>
+                                    <p>Jan</p>
+                                </a>
+                            </div>
+
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="blog-details.html">
+                                    <h2>Google inks pact for new 35-storey office</h2>
+                                </a>
+                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                    he earth it first without heaven in place seed it second morning saying.</p>
+                                <ul class="blog-info-link">
+                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
+                                        <li><a href="#"><i class="fa fa-comment-o"></i> 03 Comments</a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="img/blog/main-blog/m-blog-5.jpg" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>15</h3>
+                                    <p>Jan</p>
+                                </a>
+                            </div>
+
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="blog-details.html">
+                                    <h2>Google inks pact for new 35-storey office</h2>
+                                </a>
+                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                    he earth it first without heaven in place seed it second morning saying.</p>
+                                <ul class="blog-info-link">
+                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
+                                        <li><a href="#"><i class="fa fa-comment-o"></i> 03 Comments</a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+
+
+                        <nav class="blog-pagination justify-content-center d-flex">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a href="#" class="page-link" aria-label="Previous">
+                                        <span aria-hidden="true">
+                                            <span class="fa fa-long-arrow-left"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link">1</a>
+                                </li>
+                                <li class="page-item active">
+                                    <a href="#" class="page-link">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link" aria-label="Next">
+                                        <span aria-hidden="true">
+                                            <span class="fa fa-long-arrow-right"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog_right_sidebar">
+                        <aside class="single_sidebar_widget search_widget">
+                            <form action="#">
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Search Keyword">
+                                        <div class="input-group-append">
+                                            <button class="btn" type="button"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="button main_btn w-100" type="submit">Search</button>
+                            </form>
+                        </aside>
+
+                        <aside class="single_sidebar_widget post_category_widget">
+                            <h4 class="widget_title">Category</h4>
+                            <ul class="list cat-list">
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Resaurant food</p>
+                                        <p>(37)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Travel news</p>
+                                        <p>(10)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Modern technology</p>
+                                        <p>(03)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Product</p>
+                                        <p>(11)</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Inspiration</p>
+                                        <p>21</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>Health Care (21)</p>
+                                        <p>09</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </aside>
+
+                        <aside class="single_sidebar_widget popular_post_widget">
+                            <h3 class="widget_title">Recent Post</h3>
+                            <div class="media post_item">
+                                <img src="img/blog/popular-post/post1.jpg" alt="post">
+                                <div class="media-body">
+                                    <a href="blog-details.html">
+                                        <h3>From life was you fish...</h3>
+                                    </a>
+                                    <p>January 12, 2019</p>
+                                </div>
+                            </div>
+                            <div class="media post_item">
+                                <img src="img/blog/popular-post/post2.jpg" alt="post">
+                                <div class="media-body">
+                                    <a href="blog-details.html">
+                                        <h3>The Amazing Hubble</h3>
+                                    </a>
+                                    <p>02 Hours ago</p>
+                                </div>
+                            </div>
+                            <div class="media post_item">
+                                <img src="img/blog/popular-post/post3.jpg" alt="post">
+                                <div class="media-body">
+                                    <a href="blog-details.html">
+                                        <h3>Astronomy Or Astrology</h3>
+                                    </a>
+                                    <p>03 Hours ago</p>
+                                </div>
+                            </div>
+                            <div class="media post_item">
+                                <img src="img/blog/popular-post/post4.jpg" alt="post">
+                                <div class="media-body">
+                                    <a href="blog-details.html">
+                                        <h3>Asteroids telescope</h3>
+                                    </a>
+                                    <p>01 Hours ago</p>
+                                </div>
+                            </div>
+                        </aside>
+                        <aside class="single_sidebar_widget tag_cloud_widget">
+                            <h4 class="widget_title">Tag Clouds</h4>
+                            <ul class="list">
+                                <li>
+                                    <a href="#">project</a>
+                                </li>
+                                <li>
+                                    <a href="#">love</a>
+                                </li>
+                                <li>
+                                    <a href="#">technology</a>
+                                </li>
+                                <li>
+                                    <a href="#">travel</a>
+                                </li>
+                                <li>
+                                    <a href="#">restaurant</a>
+                                </li>
+                                <li>
+                                    <a href="#">life style</a>
+                                </li>
+                                <li>
+                                    <a href="#">design</a>
+                                </li>
+                                <li>
+                                    <a href="#">illustration</a>
+                                </li>
+                            </ul>
+                        </aside>
+
+
+                        <aside class="single_sidebar_widget instagram_feeds">
+                            <h4 class="widget_title">Instagram Feeds</h4>
+                            <ul class="instagram_row flex-wrap">
+                                <li>
+                                    <a href="#">
+                                        <img class="img-fluid" src="img/instagram/widget-i1.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="img-fluid" src="img/instagram/widget-i2.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="img-fluid" src="img/instagram/widget-i3.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="img-fluid" src="img/instagram/widget-i4.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="img-fluid" src="img/instagram/widget-i5.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="img-fluid" src="img/instagram/widget-i6.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </aside>
+
+
+                        <aside class="single_sidebar_widget newsletter_widget">
+                            <h4 class="widget_title">Newsletter</h4>
+
+                            <form action="#">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Enter email" required>
+                                </div>
+                                <button class="button main_btn w-100" type="submit">Subscribe</button>
+                            </form>
+                        </aside>
+                    </div>
+                </div>
             </div>
-            <div class="credits">
-              <!--
-                All the links in the footer should remain intact.
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eBusiness
-              -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </footer>
+    </section>
+    <!--================Blog Area =================-->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/venobox/venobox.min.js"></script>
-  <script src="lib/knob/jquery.knob.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/parallax/parallax.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
-  <script src="lib/appear/jquery.appear.js"></script>
-  <script src="lib/isotope/isotope.pkgd.min.js"></script>
-
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <script src="js/main.js"></script>
-</body>
-
-</html>
+@endsection
