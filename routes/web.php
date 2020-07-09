@@ -34,5 +34,7 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin'], function () {
     Route::resource('blogs', 'BlogController');
     Route::resource('inquery', 'InqueryController');
     Route::resource('reservation', 'ReservationController');
+    Route::get('setting', 'SettingController@setting');
+    Route::post('setting', 'SettingController@SettingSubmit')->name('SettingSubmit');
 
 });

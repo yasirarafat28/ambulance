@@ -10,4 +10,10 @@ use Illuminate\Support\Facades\DB;
         return $setting;
     }
 
+
+function lang($text=''){
+    //return '';
+    return $text;
+}
+
 ?>

@@ -24,6 +24,10 @@
                         <a href="{{url('admin/inquery')}}" class="menu-toggle"><i class="zmdi zmdi-home"></i><span>Inquiry</span></a>
                     </li>
 
+                    <li class="open">
+                        <a href="{{url('admin/setting')}}" class="menu-toggle"><i class="zmdi zmdi-home"></i><span>Setting</span></a>
+                    </li>
+
 
                 </ul>
             </div>
