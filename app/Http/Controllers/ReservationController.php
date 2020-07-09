@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NewReservation;
 use App\Reservation;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ReservationController extends Controller
 {
@@ -55,6 +57,8 @@ class ReservationController extends Controller
         $reservation->destination = $request->destination;
         $reservation->type = $request->type;
         $reservation->save();
+
+        Mail::to(setting()->email)->send(new NewReservation($reservation));
 
         return back()->withSuccess('Thanks for requesting for a reservation. We will reach to you soon!');
     }

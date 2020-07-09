@@ -114,10 +114,10 @@
                                 <li class="nav-item {{Request::is('/')?'active':''}}">
                                     <a class="nav-link" href="{{url('/')}}">Home</a>
                                 </li>
-                                <li class="nav-item  {{Request::is('/services')?'active':''}}">
+                                <li class="nav-item  {{Request::is('services')?'active':''}}">
                                     <a class="nav-link" href="{{url('services')}}">Essentials</a>
                                 </li>
-                                <li class="nav-item  {{Request::is('/reservation')?'active':''}}">
+                                <li class="nav-item  {{Request::is('reservation')?'active':''}}">
                                     <a class="nav-link" href="{{url('reservation')}}">Make Reservation</a>
                                 </li>
                                 <!--<li class="nav-item submenu dropdown">
@@ -132,10 +132,10 @@
                                         </li>
                                     </ul>
                                 </li>-->
-                                <li class="nav-item  {{Request::is('/about')?'active':''}}">
+                                <li class="nav-item  {{Request::is('about')?'active':''}}">
                                     <a class="nav-link" href="{{url('about')}}">About</a>
                                 </li>
-                                <li class="nav-item {{Request::is('/contact')?'active':''}}">
+                                <li class="nav-item {{Request::is('contact')?'active':''}}">
                                     <a class="nav-link" href="{{url('contact')}}">Contact</a>
                                 </li>
                             </ul>
