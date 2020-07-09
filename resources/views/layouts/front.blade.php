@@ -38,6 +38,10 @@
         .single-service .thumb img {
             height: 300px !important;
         }
+
+        .home_banner_area .banner_inner .banner-left {
+            background: cadetblue !important;
+        }
     </style>
 </head>
 

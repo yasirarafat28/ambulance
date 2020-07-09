@@ -9,7 +9,7 @@
                     <div class="col-lg-7">
                         <div class="banner_content d-flex flex-md-row flex-column">
                             <div class="banner-left text-md-right">
-                                <h3 class="text-uppercase">Contact Us</h3>
+                                <h3 class="text-uppercase">About Us</h3>
                             </div>
                             <div class="banner-right position-relative">
                                 <p>
