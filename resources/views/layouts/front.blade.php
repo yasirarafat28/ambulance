@@ -35,6 +35,9 @@
         .quote-area .estimated-cost .form-wrap .form-select .nice-select{
             height: 48px !important;
         }
+        .single-service .thumb img {
+            height: 300px !important;
+        }
     </style>
 </head>
 
@@ -107,10 +110,10 @@
                                     <a class="nav-link" href="{{url('/')}}">Home</a>
                                 </li>
                                 <li class="nav-item  {{Request::is('/services')?'active':''}}">
-                                    <a class="nav-link" href="{{url('services')}}">Services</a>
+                                    <a class="nav-link" href="{{url('services')}}">Essentials</a>
                                 </li>
                                 <li class="nav-item  {{Request::is('/reservation')?'active':''}}">
-                                    <a class="nav-link" href="{{url('reservation')}}">Reservation</a>
+                                    <a class="nav-link" href="{{url('reservation')}}">Make Reservation</a>
                                 </li>
                                 <li class="nav-item submenu dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -149,9 +152,7 @@
                 <div class="single-footer-widget">
                     <h6>About Us</h6>
                     <p>
-                        If you own an Iphone, you’ve probably already worked out how much fun it is to use it to watch movies-it
-                        has
-                        that.
+                        24/7 we are ready to hear you. Any time, any where we go to your door or hospital with modern and latest facilities ambulance. Don’t worry about prices or rent fare. We will keep lower rent and lower other costs. We have no hidden charges.
                     </p>
                 </div>
             </div>
@@ -160,14 +161,12 @@
                     <h6>Newsletter</h6>
                     <p>Stay update with our latest</p>
                     <div class="" id="mc_embed_signup">
-                        <form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                        <form target="_blank" novalidate="true" action="#"
                               method="get" class="form-inline">
                             <input class="form-control" name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''"
                                    onblur="this.placeholder = 'Email Address'" required="" type="email">
                             <button class="click-btn btn btn-default"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-                            <div style="position: absolute; left: -5000px;">
-                                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-                            </div>
+
                             <div class="info"></div>
                         </form>
                     </div>

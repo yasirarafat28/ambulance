@@ -29,10 +29,9 @@
       <div class="container">
         <div class="row justify-content-center text-left section-title-wrap">
           <div class="col-lg-12">
-            <h5>Get a quote now!</h5>
             <h2 class="">
-              Check the estimated cost for <br>
-              your requesting goods
+              Submit your information for reservation <br>
+              so that we can reach to you soon
             </h2>
           </div>
         </div>
@@ -43,7 +42,7 @@
                 <nav>
                   <div class="nav nav-tabs justify-content-md-start justify-content-center" id="nav-tab" role="tablist">
                     <a class="nav-item nav-link active" id="nav-getEstimation-tab" data-toggle="tab" href="#nav-getEstimation"
-                      role="tab" aria-controls="nav-getEstimation" aria-selected="true">Get an estimation</a>
+                      role="tab" aria-controls="nav-getEstimation" aria-selected="true">Reservation information</a>
                   </div>
                 </nav>
 

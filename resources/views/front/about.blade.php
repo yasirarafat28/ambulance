@@ -71,20 +71,14 @@
         <div class="col-lg-5 offset-md-0 col-md-12 text-left section-title-wrap">
           <h5>About {{setting()->app_name}}</h5>
           <h2>
-            We’re Carefully <br>
-            Delivering your <br>
-            happiness.
+            We’re committed to save your happiness
           </h2>
 
-          <h4>f you are looking at blank cassettes on the web lorem ipsum dolor sit consectetur adipisicing elit,
-            eiusmod tempor incididunt.</h4>
-          <p>
-            If you are looking at blank cassettes on the web lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Eiusmod tempor
-            incididunt ut labore et dolore magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua.
-          </p>
-          <a href="#" class="main_btn">Learn More About Us</a>
+            <h4>24/7 we are ready to hear you. Any time, any where we go to your door or hospital with modern and latest facilities ambulance. Don’t worry about prices or rent fare. We will keep lower rent and lower other costs. We have no hidden charges.</h4>
+
+            <p>Our life support modern ambulances are equipped with life saving machines like ventilator, cardiac monitors, suction machine, infusion pumps etc. and having all emergency life saving medications, hence providing an environment of intensive care unit (ICU) of any hospital.</p>
+
+
         </div>
       </div>
     </div>
