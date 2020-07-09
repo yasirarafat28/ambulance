@@ -26,7 +26,6 @@ class CreateSettingTable extends Migration
             $table->text('address')->nullable();
             $table->text('zip')->nullable();
             $table->text('country')->nullable();
-            $table->text('address')->nullable();
             $table->text('logo')->nullable();
             $table->text('facebook')->nullable();
             $table->text('twitter')->nullable();

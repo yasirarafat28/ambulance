@@ -49,23 +49,28 @@
             <div class="float-left">
                 <ul class="left_side">
                     <li>
-                        <a href="login.html">
+                        <a href="{{$setting->facebook}}" target="_blank">
                             <i class="fa fa-facebook-f"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="login.html">
+                        <a href="{{$setting->twitter}}" target="_blank">
                             <i class="fa fa-twitter"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="login.html">
-                            <i class="fa fa-dribbble"></i>
+                        <a href="{{$setting->linkedin}}" target="_blank">
+                            <i class="fa fa-linkedin"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="login.html">
-                            <i class="fa fa-behance"></i>
+                        <a href="{{$setting->youtube}}" target="_blank">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{$setting->pinterest}}" target="_blank">
+                            <i class="fa fa-pinterest"></i>
                         </a>
                     </li>
                 </ul>
@@ -73,13 +78,13 @@
             <div class="float-right">
                 <ul class="right_side">
                     <li>
-                        <a href="login.html">
+                        <a href="tel:{{$setting->phone}}">
                             <i class="lnr lnr-phone-handset"></i>
                             {{$setting->phone}}
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="mailto:{{$setting->email}}">
                             <i class="lnr lnr-envelope"></i>
                             {{$setting->email}}
                         </a>
@@ -115,7 +120,7 @@
                                 <li class="nav-item  {{Request::is('/reservation')?'active':''}}">
                                     <a class="nav-link" href="{{url('reservation')}}">Make Reservation</a>
                                 </li>
-                                <li class="nav-item submenu dropdown">
+                                <!--<li class="nav-item submenu dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                                        aria-expanded="false">Blog</a>
                                     <ul class="dropdown-menu">
@@ -126,7 +131,7 @@
                                             <a class="nav-link" href="blog-details.html">Blog Details</a>
                                         </li>
                                     </ul>
-                                </li>
+                                </li>-->
                                 <li class="nav-item  {{Request::is('/about')?'active':''}}">
                                     <a class="nav-link" href="{{url('about')}}">About</a>
                                 </li>
@@ -177,10 +182,10 @@
                     <h6>Follow Us</h6>
                     <p>Let us be social</p>
                     <div class="footer-social d-flex align-items-center">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="{{$setting->facebook}}" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="{{$setting->twitter}}" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="{{$setting->youtube}}" target="_blank"><i class="fa fa-youtube"></i></a>
+                        <a href="{{$setting->linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>

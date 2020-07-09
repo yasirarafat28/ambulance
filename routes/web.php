@@ -17,7 +17,7 @@ Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/services', 'HomeController@services');
 Route::get('/reservation', 'HomeController@reservation');
-Route::post('/reservation', 'HomeController@reservationSubmit')->name('reservationSubmit');
+Route::post('/reservation', 'ReservationController@store')->name('reservationSubmit');
 Route::get('/blogs', 'HomeController@blogs');
 Route::get('/blog-details/{id?}/{slug?}', 'HomeController@single_blog');
 Route::get('/contact', 'HomeController@contact');
@@ -32,8 +32,7 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin'], function () {
 
     Route::get('dashboard', 'DashboardController@dashboard');
     Route::resource('blogs', 'BlogController');
-    Route::resource('portfolio', 'PortfolioController');
     Route::resource('inquery', 'InqueryController');
-    Route::resource('faq', 'FaqController');
+    Route::resource('reservation', 'ReservationController');
 
 });

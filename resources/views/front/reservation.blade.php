@@ -12,7 +12,7 @@
                             </div>
                             <div class="banner-right position-relative">
                                 <p>
-                                    Get ambulance to save life over a phone call
+                                    Get ambulance over a phone call to save life
                                 </p>
                             </div>
                         </div>
@@ -37,8 +37,22 @@
         </div>
         <div class="row justify-content-between align-items-center">
           <div class="col-lg-12">
+
+              @if(session()->has('success'))
+                  <div class="alert alert-success">
+                      {{ session('success') }}
+                  </div>
+              @endif
+
+              @if($errors->any())
+                  <div class="alert alert-danger">
+                      {{ $errors->first() }}
+                  </div>
+              @endif
             <div class="estimated-cost">
-              <form class="form-wrap" action="#">
+              <form class="form-wrap" action="{{route('reservationSubmit')}}" method="POST" id="reservation-form"
+                    novalidate="novalidate">
+                  {{csrf_field()}}
                 <nav>
                   <div class="nav nav-tabs justify-content-md-start justify-content-center" id="nav-tab" role="tablist">
                     <a class="nav-item nav-link active" id="nav-getEstimation-tab" data-toggle="tab" href="#nav-getEstimation"
@@ -53,23 +67,23 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label for="firstName">Name</label>
-                          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter  name"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter  name'" />
+                          <input type="text" class="form-control" name="name" id="name" aria-describedby="emailHelp" placeholder="Enter  name"
+                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter  name'"  value="{{old('name')}}"/>
                         </div>
                       </div>
 
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="emailAddress">Email Address</label>
-                                <input type="email" class="form-control " id="emailAddress" placeholder="Enter email address"
-                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" />
+                                <label for="emailAddress">Phone</label>
+                                <input type="text" class="form-control " name="phone" id="emailAddress" placeholder="Enter phone number"
+                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter phone number'" value="{{old('phone')}}" />
                             </div>
                         </div>
 
                       <div class="col-md-6">
                         <div class="form-group">
                           <label for="lastName">Date</label>
-                          <input type="date" class="form-control" value="{{date('Y-m-d')}}" id="date" placeholder="Enter reservation date" onfocus="this.placeholder = ''"
+                          <input type="date" class="form-control" name="date" value="{{date('Y-m-d')}}" id="date" placeholder="Enter reservation date" onfocus="this.placeholder = ''"
                             onblur="this.placeholder = 'Enter reservation date'" />
                         </div>
                       </div>
@@ -92,21 +106,21 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label for="pickup">Pickup Location</label>
-                          <input type="text" class="form-control" id="pickup" placeholder="Enter pickup location"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter pickup location'" />
+                          <input type="text" class="form-control" name="pickup" id="pickup" placeholder="Enter pickup location"
+                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter pickup location'" value="{{old('pickup')}}" />
                         </div>
                       </div>
 
                       <div class="col-md-6">
                         <div class="form-group">
                           <label for="destination">Destination</label>
-                          <input type="text" class="form-control" id="destination" placeholder="Enter destination"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter destination'" />
+                          <input type="text" class="form-control" name="destination"  id="destination" placeholder="Enter destination"
+                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter destination'" value="{{old('destination')}}" />
                         </div>
                       </div>
                       <div class="col-lg-12 mt-4">
                         <div class="text-center confirm_btn_box">
-                          <button class="main_btn text-uppercase">Request for Reservation</button>
+                          <button type="submit" class="main_btn text-uppercase" onclick="this.form.submit()">Request for Reservation</button>
                         </div>
                       </div>
                     </div>
@@ -122,4 +136,5 @@
       </div>
     </section>
     <!--================ End Quote Area =================-->
+
 @endsection

@@ -68,7 +68,7 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="header">
-                        <h2><strong>inquery </strong> </h2>
+                        <h2><strong>Reservation </strong> </h2>
 
                     </div>
                     <div class="body">
@@ -77,7 +77,7 @@
                             <tr>
                                 <th># </th>
                                 <th>Name </th>
-                                <th>Email </th>
+                                <th>Phone </th>
                                 <th>Status </th>
                                 <th>Timestamp </th>
                                 <th>Action </th>
@@ -87,7 +87,7 @@
                             <tr>
                                 <th># </th>
                                 <th>Name </th>
-                                <th>Email </th>
+                                <th>Phone </th>
                                 <th>Status </th>
                                 <th>Timestamp </th>
                                 <th>Action </th>
@@ -98,7 +98,7 @@
                                 <tr>
                                     <td>{{$loop->iteration}}</td>
                                     <td>{{$item->name}}</td>
-                                    <td>{{$item->email}}</td>
+                                    <td>{{$item->phone}}</td>
                                     <td>{{$item->status}}</td>
                                     <td>{{$item->created_at}}</td>
                                     <td>
@@ -106,7 +106,7 @@
                                         <a data-toggle="modal" data-target="#largeEditModal{{$item->id}}" class="btn btn-primary btn-sm" title="Edit"><i class="zmdi zmdi-edit"> </i></a>
                                         {!! Form::open([
                                            'method'=>'DELETE',
-                                           'url' => ['/admin/inquery', $item->id],
+                                           'url' => ['/admin/reservation', $item->id],
                                            'style' => 'display:inline'
                                         ]) !!}
                                         {!! Form::button('<i class="zmdi zmdi-delete"></i> ', array(
@@ -142,7 +142,7 @@
                 <div class="modal-body">
                     <div class="card">
                         <div class="header">
-                            <h2><strong>Show Inquery</strong></h2>
+                            <h2><strong>Show Reservation</strong></h2>
                         </div>
                         <div class="body">
                             <table class="table">
@@ -155,8 +155,21 @@
                                     <td>{{$item->email}}</td>
                                 </tr>
                                 <tr>
-                                    <td>Content</td>
-                                    <td>{{html_entity_decode($item->message)}}</td>
+                                <tr>
+                                    <td>Ambulance Type</td>
+                                    <td>{{$item->type}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Expected date</td>
+                                    <td>{{$item->date}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Pickup</td>
+                                    <td>{{$item->pickup}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Destination</td>
+                                    <td>{{$item->destination}}</td>
                                 </tr>
                                 <tr>
                                     <td>Status</td>
@@ -164,10 +177,44 @@
                                 </tr>
                                 <tr>
                                     <td>Create Date</td>
-                                    <td>{{$item->created}}</td>
+                                    <td>{{$item->created_at}}</td>
                                 </tr>
                             </table>
                         </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger waves-effect" data-dismiss="modal">CLOSE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Edit Modal End-->
+    <!-- Show Modal Start -->
+    <div class="modal fade" id="largeEditModal{{$item->id}}" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="col-sm-12 container">
+                        <form method="POST" action="{{url('admin/reservation/'.$item->id)}}" accept-charset="UTF-8" class="form-horizontal form" enctype="multipart/form-data">
+                            {{csrf_field()}}
+                            {{method_field('PATCH')}}
+
+
+                            <div class="form-group ">
+                                <label for="name" class="col-md-4 control-label">Status</label>
+                                <select   name="status" id="" class="form-control ms" required>
+                                    <option value="">Select an Option</option>
+                                    <option {{$item->status=='pending'?'selected':''}} value="pending">Pending</option>
+                                    <option {{$item->status=='checked'?'selected':''}} value="checked">Checked</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-primary btn-round">Save Changes</button>
+                            </div>
+
+                        </form>
                     </div>
                 </div>
                 <div class="modal-footer">

@@ -106,8 +106,8 @@
                                     <td>{{$item->status}}</td>
                                     <td>{{$item->created_at}}</td>
                                     <td>
-                                        <a data-toggle="modal" data-target="#largeShowModal{{$item->id}}" class="btn btn-icon btn-icon-mini" title="Show"><i class="zmdi zmdi-eye"> </i></a>
-                                        <a data-toggle="modal" data-target="#largeEditModal{{$item->id}}" class="btn btn-icon btn-icon-mini" title="Edit"><i class="zmdi zmdi-edit"> </i></a>
+                                        <a data-toggle="modal" data-target="#largeShowModal{{$item->id}}" class="btn btn-primary btn-sm" title="Show"><i class="zmdi zmdi-eye"> </i></a>
+                                        <a data-toggle="modal" data-target="#largeEditModal{{$item->id}}" class="btn btn-primary btn-sm" title="Edit"><i class="zmdi zmdi-edit"> </i></a>
                                         <a class="btn btn-danger btn-icon btn-icon-mini" title="Delete ">
                                             {!! Form::open([
                                                'method'=>'DELETE',

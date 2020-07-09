@@ -13,7 +13,7 @@
                             </div>
                             <div class="banner-right position-relative">
                                 <p>
-                                    Get ambulance to save life over a phone call
+                                    Get ambulance over a phone call to save life
                                 </p>
                             </div>
                         </div>

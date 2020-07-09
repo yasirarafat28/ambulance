@@ -9,15 +9,13 @@
                     <div class="col-lg-7">
                         <div class="banner_content d-flex flex-md-row flex-column">
                             <div class="banner-left text-md-right">
-                                <h1 class="text-uppercase">Solid Super Service</h1>
+                                <h1 class="text-uppercase">Hamida Ambulance Services</h1>
                             </div>
                             <div class="banner-right position-relative">
-                                <p>
-                                    If you are looking at blank cassettes on the web, you may be
-                                    very confused at the difference in price You may see some
-                                    for as low as each.
+                                <p>24/7 we are ready to hear you.
+                                    Any time, any where we go to your door or hospital with modern and latest facilities ambulance.
                                 </p>
-                                <a class="main_btn mt-md-0 mt-4" href="#">Explore More</a>
+                                <a class="main_btn mt-md-0 mt-4" href="/reservation">Make Reservation Now</a>
                             </div>
                         </div>
                     </div>
@@ -157,7 +155,7 @@
 
 
     <!--================ Start Home Blog Area =================-->
-    <section class="home-blog-area section_gap_top">
+    <!--<section class="home-blog-area section_gap_top">
         <div class="container">
             <div class="row justify-content-center section-title-wrap">
                 <div class="col-lg-12">
@@ -234,7 +232,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
     <!--================ end Home Blog Area =================-->
 
     <!--================ Start CTA Area ================-->
