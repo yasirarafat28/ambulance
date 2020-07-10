@@ -91,7 +91,7 @@
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="fa fa-phone"></i></span>
             <div class="media-body">
-              <h3><a href="tel:454545654">{{$setting->phone}}</a></h3>
+              <h3><a href="tel:{{$setting->phone}}">{{$setting->phone}}</a></h3>
               <p>24/7 we are active to hear you.</p>
             </div>
           </div>
