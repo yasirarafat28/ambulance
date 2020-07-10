@@ -31,38 +31,32 @@
           <div class="row">
             <div class="col-lg-6 col-md-6">
               <div class="single-feature">
-                <h4>Shipment Tracking</h4>
+                  <img src="/front/img/feature/f1.png" alt="">
+                <h4>Online Reservation</h4>
                 <p>
                   The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
                 </p>
-                <a href="#">Find your cargo</a>
+                <a href="/reservation">Make a reservation</a>
               </div>
             </div>
             <div class="col-lg-6 col-md-6">
               <div class="single-feature">
+                  <img src="/front/img/feature/f2.png" alt="">
                 <h4>Have a Question?</h4>
                 <p>
                   The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
                 </p>
-                <a href="#">Contact Us</a>
+                <a href="/contact">Contact Us</a>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6">
+            <div class="col-md-6 offset-md-3">
               <div class="single-feature">
-                <h4>Get a Quote</h4>
+                  <img src="/front/img/feature/f3.png" alt="">
+                <h4>Equipments</h4>
                 <p>
                   The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
                 </p>
-                <a href="#">Start a quote</a>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-              <div class="single-feature">
-                <h4>Shipping Calculator</h4>
-                <p>
-                  The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
-                </p>
-                <a href="#">Get Estimate</a>
+                <a href="/services">Learn More</a>
               </div>
             </div>
           </div>

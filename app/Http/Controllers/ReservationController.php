@@ -57,8 +57,13 @@ class ReservationController extends Controller
         $reservation->destination = $request->destination;
         $reservation->type = $request->type;
         $reservation->save();
+        try{
 
-        Mail::to(setting()->email)->send(new NewReservation($reservation));
+
+            Mail::to(setting()->email)->send(new NewReservation($reservation));
+        }catch(\Exception $e){
+            //
+        }
 
         return back()->withSuccess('Thanks for requesting for a reservation. We will reach to you soon!');
     }
