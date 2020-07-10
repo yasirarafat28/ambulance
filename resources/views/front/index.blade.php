@@ -24,7 +24,6 @@
         </div>
     </section>
     <!--================ End Home Banner Area =================-->
-
     <!--================ Feature Area =================-->
     <section class="feature-area section_gap_top">
         <div class="container">
@@ -34,11 +33,11 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="single-feature">
                                 <img src="/front/img/feature/f1.png" alt="">
-                                <h4>Shipment Tracking</h4>
+                                <h4>Online Reservation</h4>
                                 <p>
                                     The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
                                 </p>
-                                <a href="#">Find your cargo</a>
+                                <a href="/reservation">Make a reservation</a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
@@ -48,54 +47,38 @@
                                 <p>
                                     The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
                                 </p>
-                                <a href="#">Contact Us</a>
+                                <a href="/contact">Contact Us</a>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6">
+                        <div class="col-md-6 offset-md-3">
                             <div class="single-feature">
                                 <img src="/front/img/feature/f3.png" alt="">
-                                <h4>Get a Quote</h4>
+                                <h4>Equipments</h4>
                                 <p>
                                     The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
                                 </p>
-                                <a href="#">Start a quote</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="single-feature">
-                                <img src="/front/img/feature/f4.png" alt="">
-                                <h4>Shipping Calculator</h4>
-                                <p>
-                                    The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
-                                </p>
-                                <a href="#">Get Estimate</a>
+                                <a href="/services">Learn More</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-5 offset-md-0 col-md-12 text-left section-title-wrap mt-4 mt-lg-0">
-                    <h5>About Our Company</h5>
+                <div class="col-lg-5 offset-md-0 col-md-12 text-left section-title-wrap">
+                    <h5>About {{setting()->app_name}}</h5>
                     <h2>
                         We’re committed to save your happiness
                     </h2>
 
-                    <h4>f you are looking at blank cassettes on the web lorem ipsum dolor sit consectetur adipisicing elit,
-                        eiusmod tempor incididunt.</h4>
-                    <p>
-                        If you are looking at blank cassettes on the web lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua.
-                    </p>
-                    <a href="/about" class="main_btn">Learn More About Us</a>
+                    <h4>24/7 we are ready to hear you. Any time, any where we go to your door or hospital with modern and latest facilities ambulance. Don’t worry about prices or rent fare. We will keep lower rent and lower other costs. We have no hidden charges.</h4>
+
+                    <p>Our life support modern ambulances are equipped with life saving machines like ventilator, cardiac monitors, suction machine, infusion pumps etc. and having all emergency life saving medications, hence providing an environment of intensive care unit (ICU) of any hospital.</p>
+
+
                 </div>
             </div>
         </div>
     </section>
     <!--================ End Feature Area =================-->
-
-
 
     <!--================ Start Service Area =================-->
     <section class="service-area section_gap_top">
