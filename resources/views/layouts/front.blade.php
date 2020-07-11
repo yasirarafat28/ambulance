@@ -42,6 +42,9 @@
         .home_banner_area .banner_inner .banner-left {
             background: cadetblue !important;
         }
+        .single-home-blog .thumb img {
+            height: 300px;
+        }
     </style>
 </head>
 
