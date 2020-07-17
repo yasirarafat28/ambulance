@@ -220,7 +220,119 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 <script src="/front/js/mail-script.js"></script>
-<script src="/front/js/custom.js"></script>
+<script src="/front/js/custom.js"></script><div class="side-tray">
+    <div id="feedback-form" style='display:none;' class=" panel panel-danger text-center">
+        <img style="width: 100% !important;" src="{{asset('img/helpline-tray-2.png')}}" alt="">
+        <a href="tel:+8801988300003" class="btn btn-success mt-2"><i class="fa fa-phone"></i> Call Now</a>
+    </div>
+    <div id="feedback-tab" style="background-color:orangered;"><i class="fa fa-phone"></i> Call Center</div>
+</div>
+
+<style>
+
+    body{
+        font-family: "Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif;
+    }
+    .section-padding-50{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .product-thumb a{
+        color: darkslategray;
+    }
+
+    .breadcrumb{
+        background-color: darkslateblue;
+        border-radius: 0px;
+
+    }
+    .breadcrumb-item a{
+        color: #ddd;
+    }
+    .breadcrumb-item.active a{
+        color: #fff;
+    }
+
+
+    .side-tray {
+        position: fixed;
+        right: 0;
+        bottom: 40px;
+        height: 250px;
+        margin-left: -3px;
+        margin-bottom: -3px;
+        z-index: 998;
+
+    }
+
+    #feedback-form {
+        float: right;
+        width: 300px;
+        height: 100%;
+        z-index: 1000;
+        padding: 1em;
+        padding-left: 5px;
+        padding-right: 10px;
+        background-color: #fff;
+        border: 1px solid rgba(0,0,0,.2);
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+        -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+        box-shadow: 5px 10px 15px rgba(0,1,1,.2);
+    }
+
+    #feedback-tab {
+        float: left;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        width: 150px;
+        height: 42px;
+        background-color: rgba(0,0,0,0.5);
+        margin-top: 60px;
+        margin-right: -50px;
+        padding-top: 5px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    #feedback-tab:hover { background-color: #341a79; }
+
+    #feedback-form textarea { resize: none; }
+
+</style>
+
+<script>
+    $(document).ready(function(){
+        $("#feedback-tab").click(function() {
+            $("#feedback-form").toggle("slide");
+        });
+
+        $("#feedback-form form").on('submit', function(event) {
+            var $form = $(this);
+            $.ajax({
+                type: $form.attr('method'),
+                url: $form.attr('action'),
+                data: $form.serialize(),
+                success: function() {
+                    $("#feedback-form").toggle("slide").find("textarea").val('');
+                }
+            });
+            event.preventDefault();
+        });
+    });
+</script>
+
 </body>
 
 </html>
