@@ -220,10 +220,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 <script src="/front/js/mail-script.js"></script>
-<script src="/front/js/custom.js"></script><div class="side-tray">
+<script src="/front/js/custom.js"></script>
+
+
+<div class="side-tray">
     <div id="feedback-form" style='display:none;' class=" panel panel-danger text-center">
         <img style="width: 100% !important;" src="{{asset('img/helpline-tray-2.png')}}" alt="">
-        <a href="tel:+8801988300003" class="btn btn-success mt-2"><i class="fa fa-phone"></i> Call Now</a>
+        <a href="tel:+8801712013284" class="btn btn-success mt-2"><i class="fa fa-phone"></i> Call Now</a>
     </div>
     <div id="feedback-tab" style="background-color:orangered;"><i class="fa fa-phone"></i> Call Center</div>
 </div>
