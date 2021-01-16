@@ -75,7 +75,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="emailAddress">Phone</label>
-                                <input type="text" class="form-control " name="phone" id="emailAddress" placeholder="Enter phone number"
+                                <input type="text" class="form-control " required name="phone" id="emailAddress" placeholder="Enter phone number"
                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter phone number'" value="{{old('phone')}}" />
                             </div>
                         </div>

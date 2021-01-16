@@ -15,6 +15,9 @@
             <td>{{$reservation->email}}</td>
         </tr>
         <tr>
+            <td>Phone</td>
+            <td>{{$reservation->phone}}</td>
+        </tr>
         <tr>
             <td>Ambulance Type</td>
             <td>{{$reservation->type}}</td>
